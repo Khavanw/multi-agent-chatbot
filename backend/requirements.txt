@@ -1,0 +1,25 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+fastapi
+langchain
+python-dotenv
+langchain-openai
+langchain_community
+langgraph
+langchain_tavily
+uvicorn
+langchain-qdrant
+fastembed
+pytz
+sqlmodel
+pandas
+python-multipart
+langfuse
+langchain_google_community
+deepgram-sdk==2.12.0
+llama_index
+google-generativeai
+langgraph-supervisor
