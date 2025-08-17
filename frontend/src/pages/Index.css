@@ -1,0 +1,245 @@
+/* Index Component Styles */
+.index-container {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.topbar {
+  background: #0078d7;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.location {
+  flex: 1;
+}
+
+.search-bar {
+  flex: 2;
+  display: flex;
+  max-width: 500px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+}
+
+.top-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.notification {
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.nav {
+  background: white;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu {
+  font-weight: bold;
+  color: #0078d7;
+}
+
+.nav-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.banner img {
+  width: 32%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Promotion Section */
+.promotion-section {
+  padding: 20px;
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  color: white;
+}
+
+.promotion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.promotion-header h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.buy-now-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: white;
+  color: red;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.products-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.product-card {
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 180px;
+  flex-shrink: 0;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 5px;
+}
+
+.detail-btn {
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.detail-btn:hover {
+  background: #0056b3;
+}
+
+/* Floating buttons */
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.floating-buttons button,
+.floating-buttons .support-btn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.floating-buttons button:hover,
+.floating-buttons .support-btn:hover,
+.floating-buttons .food-kit-btn:hover {
+  background: #0078d7;
+  color: white;
+  border-color: #0078d7;
+}
+
+.food-kit-btn {
+  background: linear-gradient(135deg, #ff6b6b, #feca57) !important;
+  color: white !important;
+  border-color: #ff6b6b !important;
+}
+
+.food-kit-btn:hover {
+  background: linear-gradient(135deg, #e17055, #fdcb6e) !important;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-bar {
+    max-width: 100%;
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .banner img {
+    width: 100%;
+  }
+  
+  .promotion-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .promotion-header h2 {
+    font-size: 24px;
+  }
+} 

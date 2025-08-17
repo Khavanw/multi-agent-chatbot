@@ -1,0 +1,92 @@
+{
+  "id": "eae1f92b-2025-4ec7-afb5-566bf2f35537",
+  "content": {
+    "agent": "Anh ơi, em tìm được thông tin về cá cơm tại Mega Market như sau:",
+    "tools": [
+      {
+        "metadata": {
+          "source": "mmvn_thucphamtuoisong.csv",
+          "row": 401,
+          "_id": "c9a4429a-5df8-4475-9b1a-a455d51898c4",
+          "_collection_name": "chat_collection"
+        },
+        "page_content": {
+          "product_category": "Thực phẩm tươi sống",
+          "product_name": "Cá cơm làm sạch nhỏ",
+          "product_price": "105,000 ₫",
+          "product_price_unit": "/ Ký",
+          "product_url": "https://online.mmvietnam.com/ca-com-ls-nho-20245665-24566.html",
+          "image_url": "https://mmpro.vn/media/catalog/product/cache/40feddc31972b1017c1d2c6031703b61/2/4/24566_1.webp?auto=webp&format=pjpg&width=300&height=300&fit=cover"
+        }
+      },
+      {
+        "metadata": {
+          "source": "mmvn_thucphamtuoisong.csv",
+          "row": 920,
+          "_id": "3f1fc528-8eea-4e87-8edd-740be4457419",
+          "_collection_name": "chat_collection"
+        },
+        "page_content": {
+          "product_category": "Thực phẩm tươi sống",
+          "product_name": "Cá cơm làm sạch nhỏ",
+          "product_price": "88,000 ₫",
+          "product_price_unit": "/ Ký",
+          "product_url": "https://online.mmvietnam.com/ca-com-lam-sach-nho-1102866-10-174622.html",
+          "image_url": "https://mmpro.vn/media/catalog/product/cache/40feddc31972b1017c1d2c6031703b61/1/7/174622.webp?auto=webp&format=pjpg&width=300&height=300&fit=cover"
+        }
+      },
+      {
+        "metadata": {
+          "source": "mmvn_thucphamtuoisong.csv",
+          "row": 1009,
+          "_id": "05910da9-8906-4cd6-8cc3-cd05a22e7531",
+          "_collection_name": "chat_collection"
+        },
+        "page_content": {
+          "product_category": "Thực phẩm tươi sống",
+          "product_name": "Cá bớp giò đầu cá tươi",
+          "product_price": "35,000 ₫",
+          "product_price_unit": "/ Ký",
+          "product_url": "https://online.mmvietnam.com/ca-bop-gio-dau-ca-t-21882326-188232.html",
+          "image_url": "https://mmpro.vn/media/catalog/product/cache/40feddc31972b1017c1d2c6031703b61/1/8/188232.webp?auto=webp&format=pjpg&width=300&height=300&fit=cover"
+        }
+      },
+      {
+        "metadata": {
+          "source": "mmvn_thucphamtuoisong.csv",
+          "row": 772,
+          "_id": "db17cd85-eda6-422a-9ebf-43aeeae45852",
+          "_collection_name": "chat_collection"
+        },
+        "page_content": {
+          "product_category": "Thực phẩm tươi sống",
+          "product_name": "Cá chẽm (đầu cá tươi)",
+          "product_price": "23,000 ₫",
+          "product_price_unit": "/ Ký",
+          "product_url": "https://online.mmvietnam.com/ca-chem-dau-ca-tuoi-21884375-188437.html",
+          "image_url": "https://mmpro.vn/media/catalog/product/cache/40feddc31972b1017c1d2c6031703b61/1/8/188437.webp?auto=webp&format=pjpg&width=300&height=300&fit=cover"
+        }
+      },
+      {
+        "metadata": {
+          "source": "mmvn_thucphamtuoisong.csv",
+          "row": 496,
+          "_id": "99fff4c5-6bf4-4dfb-be4c-72e679dd647d",
+          "_collection_name": "chat_collection"
+        },
+        "page_content": {
+          "product_category": "Thực phẩm tươi sống",
+          "product_name": "Cá cờ gòn, 500g",
+          "product_price": "91,000 ₫",
+          "product_price_unit": "/ Gói",
+          "product_url": "https://online.mmvietnam.com/ca-co-gon-binh-minh-500g-dong-lanh-13-10-338208.html",
+          "image_url": "https://mmpro.vn/media/catalog/product/cache/40feddc31972b1017c1d2c6031703b61/3/3/338208.webp?auto=webp&format=pjpg&width=300&height=300&fit=cover"
+        }
+      }
+    ],
+    "response": "Anh ơi, em tìm được thông tin về cá cơm tại Mega Market như sau:\n\n1. Cá cơm làm sạch nhỏ - Giá: 105,000 ₫/ký\n   - Link sản phẩm: [Xem tại đây](https://online.mmvietnam.com/ca-com-ls-nho-20245665-24566.html)\n   - Hình ảnh: ![Cá cơm làm sạch nhỏ](https://mmpro.vn/media/catalog/product/cache/40feddc31972b1017c1d2c6031703b61/2/4/24566_1.webp?auto=webp&format=pjpg&width=300&height=300&fit=cover)\n\n2. Cá cơm làm sạch nhỏ - Giá: 88,000 ₫/ký\n   - Link sản phẩm: [Xem tại đây](https://online.mmvietnam.com/ca-com-lam-sach-nho-1102866-10-174622.html)\n   - Hình ảnh: ![Cá cơm làm sạch nhỏ](https://mmpro.vn/media/catalog/product/cache/40feddc31972b1017c1d2c6031703b61/1/7/174622.webp?auto=webp&format=pjpg&width=300&height=300&fit=cover)\n\nNếu anh cần thêm thông tin về loại cá khác hoặc chi tiết hơn, anh báo em nhé!"
+  },
+  "conversation_id": "5a51894a-3c8e-4ccb-b394-fe6dd3833e2e",
+  "created_at": "2025-08-15T05:13:22.505120+07:00"
+}
+
