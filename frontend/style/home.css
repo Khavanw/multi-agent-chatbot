@@ -1,0 +1,510 @@
+/* Reset & base setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.sidebar nav a,
+.sidebar .bottom a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar nav a:hover,
+.sidebar .bottom a:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.sidebar i {
+  margin-right: 12px;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Chat Area */
+.chat-container {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages */
+/* Message Container Styles */
+.message {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  max-width: 100%;
+  animation: slideIn 0.3s ease-out;
+}
+
+.message.user {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 80%;
+}
+
+.message.bot {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #333;
+  max-width: 90%;
+}
+
+/* Message Header */
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.sender-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.message-time {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Simple Product List Styles */
+.simple-product-list {
+  margin-top: 12px;
+}
+
+.product-text-list {
+  margin-bottom: 16px;
+}
+
+.product-text-item {
+  display: flex;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.product-number {
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.product-info-text {
+  flex: 1;
+}
+
+.product-info-text strong {
+  color: #333;
+}
+
+.inline-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.inline-link:hover {
+  text-decoration: underline;
+}
+
+.product-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.product-image-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-image-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.product-image-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-caption {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Product List Styles */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.product-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  margin-top: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.product-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 4px 0;
+}
+
+.product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  align-self: flex-start;
+}
+
+.product-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.product-link svg {
+  flex-shrink: 0;
+}
+
+/* Regular Message Styles */
+.text-content {
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.text-content a {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.text-content a:hover {
+  border-bottom: 1px solid #007bff;
+}
+
+/* Message Images */
+.message-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.image-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.02);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.image-container img:hover {
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .message {
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+  
+  .product-item {
+    padding: 12px;
+  }
+  
+  .product-image {
+    height: 150px;
+  }
+  
+  .message-images {
+    grid-template-columns: 1fr;
+  }
+  
+  .message.user {
+    max-width: 90%;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .message.bot {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .product-item {
+    background: #4a5568;
+    border-color: #718096;
+  }
+  
+  .product-name {
+    color: #e2e8f0;
+  }
+  
+  .message-header {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+}
+
+
+/* Input Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box .actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.search-box button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box button i {
+  font-size: 16px;
+}
+
+.search-box button:hover {
+  background: #0056b3;
+}
+
+/* Chat History */
+.history-title {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #999;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 8px;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.history-list a {
+  color: #666;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  font-size: 14px;
+}
+
+.history-list a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* New chat button */
+#new-chat {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+#new-chat:hover {
+  background-color: #e0e0e0;
+}
+.mode-toggle.active {
+  background-color: #6c5ce7; /* Màu tím nổi bật */
+  color: white;
+}
