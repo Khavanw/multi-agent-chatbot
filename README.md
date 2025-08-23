@@ -58,6 +58,12 @@ Both systems are containerized using Docker for easy deployment and scalability.
 5. Results are stored in vector database
 6. Status updates are managed through Kafka queues
 
+### Dagster Pipeline
+![alt text](docs/imgs/dagster_pipeline.png)
+
+### Job Trigger
+![alt text](docs/imgs/job_trigger.png)
+
 ## AI Chatbot Architecture
 ![alt text](docs/imgs/Chatbot_Architecture.png)
 ### Components
@@ -76,6 +82,9 @@ Both systems are containerized using Docker for easy deployment and scalability.
   - Internet Search (BCP)
   - LangChain Agents AI
   - OpenAI LLMs
+
+### Embedding Model Finetune
+![alt text](docs/imgs/embedding_model.png)
 
 ### Features
 
