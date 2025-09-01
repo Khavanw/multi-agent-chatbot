@@ -1,5 +1,13 @@
 # Agentic AI System
 
+## 🏆 Achievements
+- **Second Prize** at the *Artificial Intelligence Competition 2025*  
+  Organized by the Faculty of Information Technology, NTT University.  
+  [🔗 Official News](https://cntt.ntt.edu.vn/hoat-dong/sinh-vien/cuoc-thi-tri-tue-nhan-tao-khoa-cong-nghe-thong-tin-2025-khoi-nguon-sang-tao-ket-noi-tri-thuc/?fbclid=IwY2xjawMWnptleHRuA2FlbQIxMABicmlkETFLaVRvc0VRb1dZbU5UdGg2AR6x5ZYqVlhCeQ3qpbNIsjpz5ygtloT4PjspwOqKnDNimhtJ9Rt1H0wEO-BFCA_aem_Jn8JBO13SCZCAkhb7maEeg)
+
+![Competition Award Ceremony](https://cntt.ntt.edu.vn/wp-content/uploads/2025/08/MG_3754-1536x862.jpg)
+
+
 ## Chatbot UI
 ![alt text](docs/imgs/chatbot_ui_1.png)
 ![alt text](docs/imgs/agent_supervisor.png)
@@ -113,4 +121,5 @@ Both systems are containerized using Docker for easy deployment and scalability.
 ## License
 
 This project is private and not publicly distributed.
+
 All source code and model details are owned by the author.
